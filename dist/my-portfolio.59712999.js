@@ -663,6 +663,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"4M6V8":[function(require,module,exports,__globalThis) {
 
-},{}]},["6D4pn","4M6V8"], "4M6V8", "parcelRequire94c2")
+},{}]},["6D4pn","4M6V8"], "4M6V8", "parcelRequire716c")
 
 //# sourceMappingURL=my-portfolio.59712999.js.map
