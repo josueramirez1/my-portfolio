@@ -1,0 +1,173 @@
+.socials {
+  background-color: orange;
+  border-radius: 10px 0 0 10px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.socials a .fa-brands {
+  color: #fff;
+  padding: .25rem;
+  font-size: 2rem;
+  display: block;
+}
+
+@media (width <= 600px) {
+  .socials {
+    display: none;
+  }
+}
+
+.main-section {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.main-section .headshot {
+  border-radius: 50%;
+  width: 335px;
+  margin-left: 10vw;
+  padding: 40px;
+}
+
+.introduction {
+  border-left: 4px solid #fff;
+  width: 40vw;
+  padding: 30px;
+}
+
+@media screen and (width <= 1000px) {
+  .main-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    display: flex;
+  }
+
+  .introduction {
+    text-align: center;
+    border-left: none;
+    width: 90vh;
+  }
+
+  .main-section .headshot {
+    margin-left: 0;
+    padding: 40px 0;
+  }
+}
+
+.arrow {
+  border: 8px solid #fff;
+  border-width: 0 8px 8px 0;
+  padding: 15px;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+.bounce {
+  padding: 50px 0 0 50px;
+  animation: 2s infinite bounce;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-30px);
+  }
+}
+
+.work-section {
+  background-color: #3b3e4d;
+  padding: 80px 50px;
+}
+
+.work-card-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.work-card {
+  background-color: #1d1f26;
+  width: 25%;
+  margin: 10px;
+  padding: 0 50px 50px;
+}
+
+@media screen and (width <= 1000px) {
+  .work-card {
+    width: 100%;
+  }
+
+  .bounce {
+    padding: 50px 0 0;
+  }
+}
+
+.html {
+  border-top: 8px solid #f28057;
+}
+
+.css {
+  border-top: 8px solid #039090;
+}
+
+.js {
+  border-top: 8px solid #5882cb;
+}
+
+.react {
+  border-top: 8px solid #efff42;
+}
+
+.about-section {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+.quote-container {
+  width: 40%;
+  padding: 40px;
+}
+
+.about-container {
+  width: 30%;
+  padding: 80px 0;
+}
+
+@media screen and (width <= 1000px) {
+  .about-section {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .about-container, .quote-container {
+    width: 80%;
+    padding: 100px 0;
+  }
+}
+
+.quote {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.quote-container p {
+  float: right;
+}
+/*# sourceMappingURL=my-portfolio.b38124d8.css.map */
