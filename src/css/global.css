@@ -10,9 +10,13 @@
   --green-color: #3f5a51;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: var(--primary-color);
   font-family: "Satoshi", sans-serif;
 }
@@ -93,7 +97,7 @@ nav .hamburger-list-container .nav-link {
     display: block;
     background-color: transparent;
     border: none;
-    color: var(--primary-color);
+    color: var(--black-color);
     font-size: 20px;
     cursor: pointer;
   }
