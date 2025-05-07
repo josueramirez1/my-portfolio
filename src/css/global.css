@@ -63,7 +63,7 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-  background-color: var(--green-color);
+  background-color: var(--blue-color);
   color: var(--primary-color);
 }
 
