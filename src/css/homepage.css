@@ -1,8 +1,15 @@
+:root {
+  --primary-color: #e9e3e0;
+  --blue-color: #435663;
+  --black-color: #000000;
+  --green-color: #3f5a51;
+}
+
 .socials {
   position: fixed;
   top: 50%;
   right: 0;
-  background-color: orange;
+  background-color: var(--green-color);
   border-radius: 10px 0 0 10px;
 }
 
@@ -12,7 +19,7 @@
 
 .socials a .fa-brands {
   display: block;
-  color: #fff;
+  color: var(--primary-color);
   font-size: 2rem;
   padding: 0.25rem;
 }
@@ -27,6 +34,7 @@
   display: flex;
   height: 100vh;
   align-items: center;
+  color: #000;
 }
 
 .main-section .headshot {
@@ -39,7 +47,7 @@
 .introduction {
   width: 40vw;
   padding: 30px;
-  border-left: 4px solid #fff;
+  border-left: 4px solid #000;
 }
 
 @media screen and (max-width: 1000px) {
@@ -63,7 +71,7 @@
 }
 
 .arrow {
-  border: solid rgb(255, 255, 255);
+  border: solid #000;
   border-width: 0 8px 8px 0;
   padding: 15px;
   display: inline-block;
@@ -93,7 +101,7 @@
 
 .work-section {
   padding: 80px 50px;
-  background-color: rgb(59, 62, 77);
+  background-color: var(--blue-color);
 }
 
 .work-card-container {

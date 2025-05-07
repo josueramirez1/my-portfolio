@@ -1,5 +1,12 @@
+:root {
+  --primary-color: #e9e3e0;
+  --blue-color: #435663;
+  --black-color: #000000;
+  --green-color: #3f5a51;
+}
+
 .about-me {
-  background-color: rgb(59, 62, 77);
+  background-color: var(--green-color);
   text-align: center;
   padding: 80px;
 }
@@ -9,6 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #000000;
 }
 
 table {

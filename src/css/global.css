@@ -7,6 +7,7 @@
   --primary-color: #e9e3e0;
   --blue-color: #435663;
   --black-color: #000000;
+  --green-color: #3f5a51;
 }
 
 body {
@@ -21,7 +22,7 @@ html {
 }
 
 nav {
-  background-color: var(--blue-color);
+  background-color: var(--primary-color);
 }
 
 nav .nav-container {
@@ -35,7 +36,7 @@ nav .tech-container .fa-brands {
 }
 
 nav .fa-meteor {
-  color: var(--primary-color);
+  color: var(--black-color);
   font-size: 1.4rem;
   margin: 0 10px 0 0;
 }
@@ -55,14 +56,14 @@ nav .tech-container {
 }
 
 nav .nav-link {
-  color: var(--primary-color);
+  color: var(--black-color);
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 6px;
 }
 
 nav .nav-link:hover {
-  background-color: var(--blue-color);
+  background-color: var(--green-color);
 }
 
 nav .hamburger {
