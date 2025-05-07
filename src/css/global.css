@@ -6,6 +6,7 @@
 :root {
   --primary-color: #e9e3e0;
   --blue-color: #435663;
+  --black-color: #000000;
 }
 
 body {
@@ -40,7 +41,7 @@ nav .fa-meteor {
 }
 
 nav h3 {
-  color: var(--primary-color);
+  color: var(--black-color);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0 30px 0 0;
@@ -61,7 +62,7 @@ nav .nav-link {
 }
 
 nav .nav-link:hover {
-  background-color: rgb(57, 67, 83);
+  background-color: var(--blue-color);
 }
 
 nav .hamburger {
