@@ -1,6 +1,15 @@
+:root {
+  --primary-color: #e9e3e0;
+  --blue-color: #435663;
+  --black-color: #000000;
+  --green-color: #3f5a51;
+}
+
 .contact-section {
   text-align: center;
   padding: 250px;
+  background-color: var(--primary-color);
+  color: var(--black-color);
 }
 
 .contact-section ul {
@@ -10,7 +19,7 @@
 }
 
 section a {
-  color: rgb(233, 227, 110);
+  color: var(--blue-color);
 }
 
 @media screen and (max-width: 1000px) {

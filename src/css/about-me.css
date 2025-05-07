@@ -45,7 +45,7 @@ table #title {
 
 section a {
   text-decoration: none;
-  color: rgb(233, 227, 110);
+  color: var(--blue-color);
 }
 
 .headshot-about {
