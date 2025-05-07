@@ -3,10 +3,15 @@
   src: url("/src/fonts/Satoshi-Regular.otf");
 }
 
+:root {
+  --primary-color: #e9e3e0;
+  --blue-color: #435663;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(41, 43, 53);
+  background-color: var(--primary-color);
   font-family: "Satoshi", sans-serif;
 }
 
@@ -15,7 +20,7 @@ html {
 }
 
 nav {
-  background-color: rgb(55, 72, 95);
+  background-color: var(--blue-color);
 }
 
 nav .nav-container {
@@ -29,13 +34,13 @@ nav .tech-container .fa-brands {
 }
 
 nav .fa-meteor {
-  color: #fff;
+  color: var(--primary-color);
   font-size: 1.4rem;
   margin: 0 10px 0 0;
 }
 
 nav h3 {
-  color: #fff;
+  color: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0 30px 0 0;
@@ -49,7 +54,7 @@ nav .tech-container {
 }
 
 nav .nav-link {
-  color: rgb(216, 218, 221);
+  color: var(--primary-color);
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 6px;
@@ -85,7 +90,7 @@ nav .hamburger-list-container .nav-link {
     display: block;
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: var(--primary-color);
     font-size: 20px;
     cursor: pointer;
   }
@@ -123,7 +128,7 @@ p {
 }
 
 footer {
-  background-color: rgb(3, 144, 144);
+  background-color: #3f5a51;
   display: flex;
   justify-content: flex-end;
   padding: 50px;
