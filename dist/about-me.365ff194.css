@@ -1,10 +1,18 @@
+:root {
+  --primary-color: #e9e3e0;
+  --blue-color: #435663;
+  --black-color: #000;
+  --green-color: #3f5a51;
+}
+
 .about-me {
+  background-color: var(--green-color);
   text-align: center;
-  background-color: #3b3e4d;
   padding: 80px;
 }
 
 .projects {
+  color: #000;
   flex-direction: column;
   align-items: center;
   padding: 80px 40px;
@@ -35,7 +43,7 @@ table #title {
 }
 
 section a {
-  color: #e9e36e;
+  color: var(--blue-color);
   text-decoration: none;
 }
 

@@ -1,5 +1,12 @@
+:root {
+  --primary-color: #e9e3e0;
+  --blue-color: #435663;
+  --black-color: #000;
+  --green-color: #3f5a51;
+}
+
 .socials {
-  background-color: orange;
+  background-color: var(--blue-color);
   border-radius: 10px 0 0 10px;
   position: fixed;
   top: 50%;
@@ -11,7 +18,7 @@
 }
 
 .socials a .fa-brands {
-  color: #fff;
+  color: var(--primary-color);
   padding: .25rem;
   font-size: 2rem;
   display: block;
@@ -24,6 +31,7 @@
 }
 
 .main-section {
+  color: #000;
   align-items: center;
   height: 100vh;
   display: flex;
@@ -37,7 +45,7 @@
 }
 
 .introduction {
-  border-left: 4px solid #fff;
+  border-left: 4px solid #000;
   width: 40vw;
   padding: 30px;
 }
@@ -63,7 +71,7 @@
 }
 
 .arrow {
-  border: 8px solid #fff;
+  border: 8px solid #000;
   border-width: 0 8px 8px 0;
   padding: 15px;
   display: inline-block;
@@ -90,21 +98,86 @@
 }
 
 .work-section {
-  background-color: #3b3e4d;
+  background-color: var(--blue-color);
   padding: 80px 50px;
+}
+
+.work-sub-title {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.work-sub-title h2 {
+  font-size: 3rem;
 }
 
 .work-card-container {
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2.6rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 6rem;
   display: flex;
 }
 
 .work-card {
-  background-color: #1d1f26;
-  width: 25%;
-  margin: 10px;
-  padding: 0 50px 50px;
+  background-color: var(--green-color);
+  color: var(--primary-color);
+  border-radius: 11px;
+  width: 18rem;
+  min-width: 18rem;
+  height: auto;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all .3s;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem #00000013;
+}
+
+.swd {
+  background-color: #8c6241;
+}
+
+.work-img {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+}
+
+.work-card:active, .work-card:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+  transform: translateY(-1.2rem);
+}
+
+.work-img {
+  width: 100%;
+}
+
+.work-text {
+  text-align: center;
+  flex-direction: column;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 0;
+  display: flex;
+}
+
+.work-description {
+  padding: 1.8rem 2.4rem;
+}
+
+.source-code:link, .source-code:visited {
+  color: var(--black-color);
+  padding: .8rem;
+  text-decoration: none;
+}
+
+.source-code:hover, .source-code:active {
+  color: var(--primary-color);
+  transition: all .3s ease-in;
 }
 
 @media screen and (width <= 1000px) {

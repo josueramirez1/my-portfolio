@@ -1,9 +1,24 @@
-@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap";
-body {
-  background-color: #292b35;
+@font-face {
+  font-family: Satoshi;
+  src: url("Satoshi-Regular.b3425686.otf");
+}
+
+:root {
+  --primary-color: #e9e3e0;
+  --blue-color: #435663;
+  --black-color: #000;
+  --green-color: #3f5a51;
+}
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Lato, sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: Satoshi, sans-serif;
 }
 
 html {
@@ -11,7 +26,7 @@ html {
 }
 
 nav {
-  background-color: #37485f;
+  background-color: var(--primary-color);
 }
 
 nav .nav-container {
@@ -25,13 +40,13 @@ nav .tech-container .fa-brands {
 }
 
 nav .fa-meteor {
-  color: #fff;
+  color: var(--black-color);
   margin: 0 10px 0 0;
   font-size: 1.4rem;
 }
 
 nav h3 {
-  color: #fff;
+  color: var(--black-color);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0 30px 0 0;
@@ -44,14 +59,15 @@ nav .menu-container, nav .tech-container {
 }
 
 nav .nav-link {
-  color: #d8dadd;
+  color: var(--black-color);
   border-radius: 6px;
   padding: 8px 12px;
   text-decoration: none;
 }
 
 nav .nav-link:hover {
-  background-color: #394353;
+  background-color: var(--blue-color);
+  color: var(--primary-color);
 }
 
 nav .hamburger {
@@ -78,7 +94,7 @@ nav .hamburger-list-container .nav-link {
 
 @media (width <= 600px) {
   nav .hamburger {
-    color: #fff;
+    color: var(--black-color);
     cursor: pointer;
     background-color: #0000;
     border: none;
@@ -119,7 +135,7 @@ p {
 }
 
 footer {
-  background-color: #039090;
+  background-color: #3f5a51;
   justify-content: flex-end;
   padding: 50px;
   display: flex;

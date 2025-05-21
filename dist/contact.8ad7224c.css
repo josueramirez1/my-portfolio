@@ -1,5 +1,21 @@
+:root {
+  --primary-color: #e9e3e0;
+  --blue-color: #435663;
+  --black-color: #000;
+  --green-color: #3f5a51;
+  --header-height: 62px;
+  --footer-height: 122px;
+}
+
+.contact-page {
+  overflow: hidden;
+}
+
 .contact-section {
   text-align: center;
+  height: calc(100vh - var(--header-height)  - var(--footer-height));
+  background-color: var(--primary-color);
+  color: var(--black-color);
   padding: 250px;
 }
 
@@ -10,7 +26,11 @@
 }
 
 section a {
-  color: #e9e36e;
+  color: var(--blue-color);
+}
+
+footer {
+  background-color: var(--green-color);
 }
 
 @media screen and (width <= 1000px) {
@@ -20,6 +40,10 @@ section a {
 }
 
 @media screen and (width <= 600px) {
+  .contact-page {
+    overflow: scroll;
+  }
+
   .contact-section {
     padding: 250px 50px;
   }
