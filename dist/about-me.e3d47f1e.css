@@ -1,2 +1,0 @@
-.about-me{text-align:center;background-color:#3b3e4d;padding:80px}.projects{flex-direction:column;align-items:center;padding:80px 40px;display:flex}table{max-width:800px;margin-top:50px}table td{padding:15px}table #project{min-width:110px}table #title{min-width:200px}@media (width<=600px){table #project,table #title{min-width:0}}section a{color:#e9e36e;text-decoration:none}.headshot-about{border-radius:50%;width:335px;padding:40px}@media screen and (width<=1000px){.about-me{padding:10px}.headshot-about{padding:40px 0}}
-/*# sourceMappingURL=about-me.e3d47f1e.css.map */
