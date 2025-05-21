@@ -25,9 +25,9 @@
               href="https://josueramirez1.netlify.app/1de76bb65203a5d7d1c9626986c34444.pdf"
               >Download Resume</a
             >
-            <a href="#work" class="nav-link">Work</a>
             <a href="pages/about-me.html" class="nav-link">About</a>
             <a href="pages/contact.html" class="nav-link">Contact</a>
+            <a href="#work" class="nav-link">Work</a>
           </div>
         </div>
         <div class="tech-container">
@@ -54,7 +54,11 @@
     </div>
 
     <section class="main-section">
-      <img class="headshot" src="images/avatar.jpeg" alt="author headshot" />
+      <img
+        class="headshot"
+        src="../src/img/avatar.jpeg"
+        alt="author headshot"
+      />
       <div class="introduction">
         <h1>Hi, I'm Josue</h1>
         <p>
@@ -64,27 +68,118 @@
       </div>
     </section>
     <section class="work-section" id="work">
+      <div class="work-sub-title">
+        <h2>Projects</h2>
+        <h3>Click on image to view preview</h3>
+      </div>
+
       <div class="work-card-container">
         <div class="work-card js">
-          <h6>HTML, CSS, JS</h6>
-          <a href="#"><h3>Parks and Recs API</h3></a>
-          <p>
-            A webpage dedicated to the one and only Ron Swanson with some of his
-            most memorable quotes.
-          </p>
+          <div class="work-top">
+            <a
+              href="https://josueramirez1.github.io/randomRonAsync-Await/"
+              target="_blank"
+            >
+              <img
+                class="work-img"
+                src="img/randomRon.png"
+                alt="Screenshot of Random Ron web app"
+              />
+            </a>
+          </div>
+          <div class="work-text">
+            <h3 class="work-title">Random Ron</h3>
+            <p class="work-description">
+              Unique quotes from our beloved Parks and Rec. character, Ron
+              Swanson, fetched from API.
+            </p>
+            <a
+              class="source-code"
+              href="https://github.com/josueramirez1/randomRonAsync-Await"
+              target="_blank"
+              >View source code</a
+            >
+          </div>
         </div>
         <div class="work-card js">
-          <h6>HTML, CSS, JS</h6>
-          <a href="#"><h3>Monster Game</h3></a>
-          <p>
-            Click on the door to find the monster but be careful! Find the wrong
-            door and you'll be in for a surprise.
-          </p>
+          <div class="work-top">
+            <a
+              href="https://josueramirez1.github.io/monsterGame/"
+              target="_blank"
+            >
+              <img
+                class="work-img"
+                src="img/monsters.png"
+                alt="Screenshot of Monster Game web app"
+              />
+            </a>
+          </div>
+          <div class="work-text">
+            <h3 class="work-title">Monster Game</h3>
+            <p class="work-description">
+              Click on the door to find the monster but be careful! Find the
+              wrong door and you'll be in for a surprise.
+            </p>
+            <a
+              class="source-code"
+              href="https://github.com/josueramirez1/monsterGame"
+              target="_blank"
+              >View source code</a
+            >
+          </div>
         </div>
         <div class="work-card js">
-          <h6>HTML, CSS, JS</h6>
-          <a href="#"><h3>Falling Emoji</h3></a>
-          <p>A web page displaying emoji falling at different speed rates</p>
+          <div class="work-top">
+            <a
+              href="https://josueramirez1.github.io/js-css-html-falling-emoji/"
+              target="_blank"
+            >
+              <img
+                class="work-img"
+                src="img/falling.png"
+                alt="Screenshot of Monster Game web app"
+              />
+            </a>
+          </div>
+          <div class="work-text">
+            <h3 class="work-title">Falling Emoji</h3>
+            <p class="work-description">
+              A web page displaying emoji falling at different speed rates
+            </p>
+            <a
+              class="source-code"
+              href="https://github.com/josueramirez1/js-css-html-falling-emoji"
+              target="_blank"
+              >View source code</a
+            >
+          </div>
+        </div>
+        <div class="work-card js">
+          <div class="work-top">
+            <a
+              href="https://josueramirez1.github.io/js-css-html-random-pokemon-generator/"
+              target="_blank"
+            >
+              <img
+                class="work-img"
+                src="img/pokemon.png"
+                alt="Screenshot of Monster Game web app"
+              />
+            </a>
+          </div>
+          <div class="work-text">
+            <h3 class="work-title">Pokemon API</h3>
+            <p class="work-description">
+              A webpage dedicated to the incredible franchise that is Pokemon.
+              Can you find your favorite Pokemon?
+            </p>
+            <a
+              class="source-code"
+              href="https://github.com/josueramirez1/js-css-html-random-pokemon-generator"
+              target="_blank"
+              >View source code</a
+            >
+          </div>
         </div>
         <div class="work-card js">
           <h6>HTML, CSS, JS</h6>
@@ -102,14 +197,7 @@
             task once it runs out of time.
           </p>
         </div>
-        <div class="work-card js">
-          <h6>HTML, CSS, JS</h6>
-          <a href="#"><h3>Pokemon Generator</h3></a>
-          <p>
-            A webpage dedicated to the incredible franchise that is Pokemon. Can
-            you find your favorite Pokemon?
-          </p>
-        </div>
+
         <div class="work-card react">
           <h6>HTML, CSS, JS, React</h6>
           <a href="#"><h3>Credit Card Form</h3></a>
