@@ -11,6 +11,10 @@
   padding: 80px;
 }
 
+.info {
+  padding: 20px 60px 20px;
+}
+
 .projects {
   padding: 80px 40px;
   display: flex;
