@@ -6,13 +6,16 @@
 }
 
 .about-me {
-  background-color: var(--green-color);
   text-align: center;
+  background-color: var(--green-color);
   padding: 80px;
 }
 
-.info {
-  padding: 20px 60px 20px;
+.about-me .info {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 15px;
 }
 
 .projects {
