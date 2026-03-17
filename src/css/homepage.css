@@ -302,3 +302,8 @@
 .react {
   border-top: solid 8px rgb(239, 255, 66);
 }
+
+.project_tags {
+  font-style: italic;
+  color: var(--primary-color);
+}
