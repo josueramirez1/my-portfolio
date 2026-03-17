@@ -67,55 +67,68 @@
       <div class="skills-container">
         <h3>Engineering Skills</h3>
         <p class="skills-description">
-          I focus on building interactive web applications using modern
-          JavaScript, with an emphasis on clean structure, reusable components,
-          and responsive design.
+          These are the core engineering areas I focus on when building web
+          applications. Each category below corresponds to projects that
+          demonstrate these skills.
         </p>
 
         <div class="skills-grid">
           <div class="skill-card">
-            <h4>Frontend Development</h4>
+            <h4 data-filter="frontend">Frontend UI</h4>
             <ul>
-              <li>JavaScript (ES6+)</li>
-              <li>React fundamentals</li>
-              <li>HTML & CSS</li>
-              <li>Responsive design</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h4>UI Development</h4>
-            <ul>
-              <li>Building interactive interfaces</li>
+              <li>Responsive layouts with HTML & CSS</li>
               <li>Flexbox & CSS Grid</li>
-              <li>Component-based layouts (React)</li>
+              <li>Interactive UI design</li>
+              <li>User-focused interface development</li>
             </ul>
           </div>
 
           <div class="skill-card">
-            <h4>Application Logic</h4>
+            <h4 data-filter="react">React Architecture</h4>
             <ul>
-              <li>Working with APIs (fetch / async-await)</li>
-              <li>Handling user input & events</li>
-              <li>Managing application state (basic)</li>
+              <li>Component-based application design</li>
+              <li>Reusable UI components</li>
+              <li>State management with hooks</li>
+              <li>Organizing scalable React projects</li>
             </ul>
           </div>
 
           <div class="skill-card">
-            <h4>Projects & Problem Solving</h4>
+            <h4 data-filter="api">API Integration</h4>
             <ul>
-              <li>Building full frontend applications</li>
-              <li>Debugging and troubleshooting</li>
-              <li>Refactoring and improving code</li>
+              <li>Fetching external data</li>
+              <li>Async / Await patterns</li>
+              <li>Working with REST APIs</li>
+              <li>Displaying dynamic data in UI</li>
             </ul>
           </div>
 
           <div class="skill-card">
-            <h4>Tools</h4>
+            <h4 data-filter="interactive">Interactive Applications</h4>
             <ul>
-              <li>Git & GitHub</li>
-              <li>VS Code</li>
-              <li>Browser DevTools</li>
+              <li>Event-driven UI behavior</li>
+              <li>Handling user input</li>
+              <li>Dynamic updates to the DOM</li>
+              <li>Building engaging user experiences</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Tools & Workflow</h4>
+            <ul>
+              <li>Git & GitHub version control</li>
+              <li>VS Code development environment</li>
+              <li>Browser DevTools debugging</li>
+              <li>Deploying applications with Netlify</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4>Backend Integration</h4>
+            <ul>
+              <li>Database integration with Supabase / Appwrite</li>
+              <li>User authentication systems</li>
+              <li>Connecting frontend applications to backend services</li>
+              <li>Managing dynamic data from cloud databases</li>
             </ul>
           </div>
         </div>
@@ -143,9 +156,15 @@
         <button class="filter-btn" data-filter="interactive">
           Interactive Apps
         </button>
+        <button class="filter-btn" data-filter="backend_integration">
+          Backend Integration
+        </button>
       </div>
       <div class="work-card-container">
-        <div class="work-card react" data-category="react frontend">
+        <div
+          class="work-card react"
+          data-category="react frontend backend_integration"
+        >
           <div class="work-top">
             <a href="https://josue-seis.netlify.app/" target="_blank">
               <img
@@ -157,6 +176,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">SEIS Clone</h3>
+            <p class="project-tags">React • Frontend • Backend Integration</p>
             <p class="work-description">
               A reimagined system integration website of the web app I use at my
               special education job, SEIS.
@@ -169,7 +189,10 @@
             >
           </div>
         </div>
-        <div class="work-card react" data-category="react frontend">
+        <div
+          class="work-card react"
+          data-category="react frontend backend_integration"
+        >
           <div class="work-top">
             <a href="https://josue-kanban.netlify.app/" target="_blank">
               <img
@@ -181,6 +204,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Upscaler</h3>
+            <p class="project-tags">React • Frontend • Backend Integration</p>
             <p class="work-description">
               A task management application built with a component-driven UI,
               enabling collaborative workflows with dynamic state updates.
@@ -208,6 +232,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Random Ron</h3>
+            <p class="project-tags">API • Frontend</p>
             <p class="work-description">
               Unique quotes from our beloved Parks and Rec. character, Ron
               Swanson, fetched from API. Project from Go Make Things by Chris
@@ -236,6 +261,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Monster Game</h3>
+            <p class="project-tags">Frontend • Interactive</p>
             <p class="work-description">
               Click on the door to find the monster but be careful! Find the
               wrong door and you'll be in for a surprise. Project from Go Make
@@ -264,6 +290,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Pokemon API</h3>
+            <p class="project-tags">API • Frontend</p>
             <p class="work-description">
               A webpage dedicated to the incredible franchise that is Pokemon.
               Can you find your favorite Pokemon? Original project was Beer API
@@ -277,7 +304,7 @@
             >
           </div>
         </div>
-        <div class="work-card js" data-category="frontend">
+        <div class="work-card js" data-category="frontend interactive">
           <div class="work-top">
             <a
               href="https://josueramirez1.github.io/js-css-html-unit-converter/"
@@ -292,6 +319,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Unit Converter</h3>
+            <p class="project-tags">Frontend • Interactive</p>
             <p class="work-description">
               Conversion app is used to help convert to different measurements
               in science or math related projects. Project from Ania Kubow.
@@ -319,6 +347,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Pomodoro Timer</h3>
+            <p class="project-tags">Frontend • Interactive</p>
             <p class="work-description">
               Students use this app to teach them the Pomodoro technique,
               utilizing intervals to improve length of focus and study time.
@@ -347,6 +376,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Travel App</h3>
+            <p class="project-tags">React • API • Frontend</p>
             <p class="work-description">
               A fully functional Travel App with authentication for users so
               they can add, update, edit and delete their own travel
@@ -375,6 +405,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Image Generator</h3>
+            <p class="project-tags">API</p>
             <p class="work-description">
               This Image Generator App works with OpenAI to create images based
               on user input. Project from Fireship.
@@ -387,7 +418,7 @@
             >
           </div>
         </div>
-        <div class="work-card js" data-category="frontend interactive">
+        <div class="work-card js" data-category="frontend interactive api">
           <div class="work-top">
             <a
               href="https://josueramirez1.github.io/js-css-html-kan/"
@@ -402,6 +433,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Kanban Board</h3>
+            <p class="project-tags">Frontend • Interactive • API</p>
             <p class="work-description">
               A place to organize tasks to complete as well as add new ones and
               delete old ones. Project from Ania Kubow.
@@ -429,6 +461,7 @@
           </div>
           <div class="work-text">
             <h3 class="work-title">Movie App</h3>
+            <p class="project-tags">React • API</p>
             <p class="work-description">
               A fun project using React and using appwrite database to determine
               trending movies based on search. Project from JS Mastery by Adrian
