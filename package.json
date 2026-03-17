@@ -6,6 +6,20 @@
     "build": "parcel build"
   },
   "devDependencies": {
-    "parcel": "^2.14.1"
-  }
+    "parcel": "^2.16.4"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josueramirez1/my-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/josueramirez1/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/josueramirez1/my-portfolio#readme"
 }

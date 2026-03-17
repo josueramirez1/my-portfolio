@@ -30,14 +30,9 @@
             >
           </div>
         </div>
-        <div class="tech-container">
-          <i class="fa-brands fa-html5" style="color: #d36144"></i>
-          <i class="fa-brands fa-css3-alt" style="color: #186daa"></i>
-          <i class="fa-brands fa-js" style="color: #ffd43b"></i>
-          <i class="fa-brands fa-react" style="color: #47b1ce"></i>
-        </div>
       </div>
       <div class="hamburger-list-container hidden">
+        <a href="/" class="nav-link">Home</a>
         <a href="#work" class="nav-link">Work</a>
         <a href="pages/about-me.html" class="nav-link">About</a>
         <a href="pages/contact.html" class="nav-link">Contact</a>
@@ -62,9 +57,68 @@
       <div class="introduction">
         <h1>Hi, I'm Josue</h1>
         <h2>
-          Welcome to my website! Here, you can check out what I'm working on.
+          I build web applications with a focus on scalable architecture,
+          component-driven UI, and clean, maintainable code.
         </h2>
         <div class="bounce"><i class="arrow"></i></div>
+      </div>
+    </section>
+    <section class="skills-section">
+      <div class="skills-container">
+        <h3>Engineering Skills</h3>
+        <p class="skills-description">
+          I focus on building interactive web applications using modern
+          JavaScript, with an emphasis on clean structure, reusable components,
+          and responsive design.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h4>Frontend Development</h4>
+            <ul>
+              <li>JavaScript (ES6+)</li>
+              <li>React fundamentals</li>
+              <li>HTML & CSS</li>
+              <li>Responsive design</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>UI Development</h4>
+            <ul>
+              <li>Building interactive interfaces</li>
+              <li>Flexbox & CSS Grid</li>
+              <li>Component-based layouts (React)</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Application Logic</h4>
+            <ul>
+              <li>Working with APIs (fetch / async-await)</li>
+              <li>Handling user input & events</li>
+              <li>Managing application state (basic)</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Projects & Problem Solving</h4>
+            <ul>
+              <li>Building full frontend applications</li>
+              <li>Debugging and troubleshooting</li>
+              <li>Refactoring and improving code</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Tools</h4>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Browser DevTools</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="work-section" id="work">
@@ -77,8 +131,21 @@
         </p>
       </div>
 
+      <div class="filter-buttons">
+        <p class="filter-intro">Browse by Area</p>
+        <br />
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend UI</button>
+        <button class="filter-btn" data-filter="react">
+          React Architecture
+        </button>
+        <button class="filter-btn" data-filter="api">API Integration</button>
+        <button class="filter-btn" data-filter="interactive">
+          Interactive Apps
+        </button>
+      </div>
       <div class="work-card-container">
-        <div class="work-card react">
+        <div class="work-card react" data-category="react frontend">
           <div class="work-top">
             <a href="https://josue-seis.netlify.app/" target="_blank">
               <img
@@ -102,7 +169,7 @@
             >
           </div>
         </div>
-        <div class="work-card react">
+        <div class="work-card react" data-category="react frontend">
           <div class="work-top">
             <a href="https://josue-kanban.netlify.app/" target="_blank">
               <img
@@ -115,7 +182,8 @@
           <div class="work-text">
             <h3 class="work-title">Upscaler</h3>
             <p class="work-description">
-              A task management app created for team collaboration.
+              A task management application built with a component-driven UI,
+              enabling collaborative workflows with dynamic state updates.
             </p>
             <a
               class="source-code"
@@ -125,7 +193,7 @@
             >
           </div>
         </div>
-        <div class="work-card js">
+        <div class="work-card js" data-category="api frontend">
           <div class="work-top">
             <a
               href="https://josueramirez1.github.io/randomRonAsync-Await/"
@@ -153,7 +221,7 @@
             >
           </div>
         </div>
-        <div class="work-card js">
+        <div class="work-card js" data-category="interactive frontend">
           <div class="work-top">
             <a
               href="https://josueramirez1.github.io/monsterGame/"
@@ -181,7 +249,7 @@
             >
           </div>
         </div>
-        <div class="work-card js">
+        <div class="work-card js" data-category="api frontend">
           <div class="work-top">
             <a
               href="https://josueramirez1.github.io/js-css-html-random-pokemon-generator/"
@@ -209,7 +277,7 @@
             >
           </div>
         </div>
-        <div class="work-card js">
+        <div class="work-card js" data-category="frontend">
           <div class="work-top">
             <a
               href="https://josueramirez1.github.io/js-css-html-unit-converter/"
@@ -236,7 +304,7 @@
             >
           </div>
         </div>
-        <div class="work-card js">
+        <div class="work-card js" data-category="interactive frontend">
           <div class="work-top">
             <a
               href="https://josueramirez1.github.io/js-css-html-pomodoro-timer/"
@@ -264,7 +332,7 @@
             >
           </div>
         </div>
-        <div class="work-card react">
+        <div class="work-card react" data-category="react api frontend">
           <div class="work-top">
             <a
               href="https://euphonious-sopapillas-a8f708.netlify.app/"
@@ -292,7 +360,7 @@
             >
           </div>
         </div>
-        <div class="work-card js">
+        <div class="work-card js" data-category="api">
           <div class="work-top">
             <a
               href="https://incredible-cat-d6cc49.netlify.app/"
@@ -319,7 +387,7 @@
             >
           </div>
         </div>
-        <div class="work-card js">
+        <div class="work-card js" data-category="frontend interactive">
           <div class="work-top">
             <a
               href="https://josueramirez1.github.io/js-css-html-kan/"
@@ -346,7 +414,7 @@
             >
           </div>
         </div>
-        <div class="work-card react">
+        <div class="work-card react" data-category="react api">
           <div class="work-top">
             <a
               href="https://musical-pothos-2bd93f.netlify.app/"
