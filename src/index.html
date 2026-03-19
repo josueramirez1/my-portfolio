@@ -32,9 +32,8 @@
         </div>
       </div>
       <div class="hamburger-list-container hidden">
-        <a href="/" class="nav-link">Home</a>
-        <a href="#work" class="nav-link">Work</a>
-        <a href="pages/about-me.html" class="nav-link">About</a>
+        <a href="#main-sect" class="nav-link">Home</a>
+        <a href="#work" class="nav-link">Projects</a>
         <a href="pages/contact.html" class="nav-link">Contact</a>
       </div>
     </nav>
@@ -48,7 +47,7 @@
       </a>
     </div>
 
-    <section class="main-section">
+    <section id="main-sect" class="main-section">
       <img
         class="headshot"
         src="../src/img/avatar.jpeg"
@@ -64,72 +63,63 @@
       </div>
     </section>
     <section class="skills-section">
+      <h3 class="skills-title">Skills</h3>
       <div class="skills-container">
-        <h3>Engineering Skills</h3>
         <p class="skills-description">
           These are the core engineering areas I focus on when building web
-          applications. Each category below corresponds to projects that
-          demonstrate these skills and decided to be the best fit.
+          applications (but not limited to). Each category corresponds to
+          projects that demonstrate these skills and that I decided to be the
+          best fit.
         </p>
-
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h4 data-filter="frontend">Frontend UI</h4>
-            <ul>
-              <li>Responsive layouts with HTML & CSS</li>
-              <li>Flexbox & CSS Grid</li>
-              <li>Interactive UI design</li>
-              <li>User-focused interface development</li>
-            </ul>
+        <div class="skills-categories">
+          <div class="skills-category">
+            <h3>Frontend UI</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">Responsive Design</span>
+              <span class="skill-pill">Flexbox</span>
+              <span class="skill-pill">CSS Grid</span>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>React Architecture</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">Component Architecture</span>
+              <span class="skill-pill">Reusable Components</span>
+              <span class="skill-pill">React Hooks</span>
+            </div>
           </div>
 
-          <div class="skill-card">
-            <h4 data-filter="react">React Architecture</h4>
-            <ul>
-              <li>Component-based application design</li>
-              <li>Reusable UI components</li>
-              <li>State management with hooks</li>
-              <li>Organizing scalable React projects</li>
-            </ul>
+          <div class="skills-category">
+            <h3>API Integration</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">Async / Await</span>
+              <span class="skill-pill">Fetch API</span>
+              <span class="skill-pill">JSON Data</span>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Backend Integration</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">Supabase</span>
+              <span class="skill-pill">Appwrite</span>
+              <span class="skill-pill">Authentication</span>
+              <span class="skill-pill">Database CRUD</span>
+            </div>
           </div>
 
-          <div class="skill-card">
-            <h4 data-filter="api">API Integration</h4>
-            <ul>
-              <li>Fetching external data</li>
-              <li>Async / Await patterns</li>
-              <li>Working with REST APIs</li>
-              <li>Displaying dynamic data in UI</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h4 data-filter="interactive">Interactive Applications</h4>
-            <ul>
-              <li>Event-driven UI behavior</li>
-              <li>Handling user input</li>
-              <li>Dynamic updates to the DOM</li>
-              <li>Building engaging user experiences</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h4>Tools & Workflow</h4>
-            <ul>
-              <li>Git & GitHub version control</li>
-              <li>VS Code development environment</li>
-              <li>Browser DevTools debugging</li>
-              <li>Deploying applications with Netlify</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h4>Backend Integration</h4>
-            <ul>
-              <li>Database integration with Supabase / Appwrite</li>
-              <li>User authentication systems</li>
-              <li>Connecting frontend applications to backend services</li>
-              <li>Managing dynamic data from cloud databases</li>
-            </ul>
+          <div class="skills-category">
+            <h3>Tools</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">DevTools</span>
+              <span class="skill-pill">Netlify</span>
+            </div>
           </div>
         </div>
       </div>
