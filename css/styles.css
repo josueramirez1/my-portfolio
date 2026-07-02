@@ -34,10 +34,10 @@
     --black-color: #000000;
     --green-color: #3f5a51;
 
-    --header-height: 60px;
+    --header-height: auto;
 
-    @media (width < calc(600 / 16 * 1rem)) {
-      --header-height: 50px;
+    @media (width > calc(600 / 16 * 1rem)) {
+      --header-height: 60px;
     }
   }
 
@@ -99,82 +99,76 @@
     background-color: var(--primary-color);
     height: var(--header-height);
 
-    .topnav__tech-container {
-      &.fa-brands {
-        font-size: 1.4rem;
-        margin: 0 0.3rem;
-      }
-    }
-
     .topnav__menu {
-      display: flex;
-      align-items: center;
-      padding-block: 20px;
+      @media (width > calc(600 / 16 * 1rem)) {
+        display: flex;
+        align-items: center;
+        padding-block: 20px;
+      }
     }
 
     .topnav__hamburger,
     .topnav__close {
-      display: none;
+      display: block;
+      background-color: transparent;
+      border: none;
+      color: var(--secondary-color);
+      font-size: 20px;
+      cursor: pointer;
 
-      @media (width < calc(600 / 16 * 1rem)) {
-        display: block;
-        background-color: transparent;
-        border: none;
-        color: var(--secondary-color);
-        font-size: 20px;
-        cursor: pointer;
+      @media (width > calc(600 / 16 * 1rem)) {
+        display: none;
       }
     }
 
     .topnav__links {
-      @media (width < calc(600 / 16 * 1rem)) {
-        display: none;
+      display: none;
+      @media (width > calc(600 / 16 * 1rem)) {
+        display: block;
       }
     }
 
     .topnav__hamburger-list {
-      display: none;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw; /* Adjust the width of your slide-out drawer here */
+      height: 100vh; /* Fills the entire screen height */
+      background-color: #000000; /* Change this to your site's menu background color */
+      z-index: 1000;
 
-      @media (width < calc(600 / 16 * 1rem)) {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw; /* Adjust the width of your slide-out drawer here */
-        height: 100vh; /* Fills the entire screen height */
-        background-color: #000000; /* Change this to your site's menu background color */
-        z-index: 1000;
-
-        /* transform: translateX(100%);
+      /* transform: translateX(100%);
 
         transition: transform 0.3s ease-in-out; */
 
-        .topnav__link {
-          display: block;
-        }
+      .topnav__link {
+        display: block;
+      }
+
+      @media (width > calc(600 / 16 * 1rem)) {
+        display: none;
       }
 
       &.hidden {
-        display: none;
+        display: block;
+        transform: translateX(100%); /* Pushes it away to the right */
+        pointer-events: none;
 
-        @media (width < calc(600 / 16 * 1rem)) {
-          display: block;
-          transform: translateX(100%); /* Pushes it away to the right */
-
-          /* Optional: Keeps it hidden from keyboard screen-readers when closed */
-          pointer-events: none;
+        @media (width > calc(600 / 16 * 1rem)) {
+          display: none;
         }
       }
     }
 
     .topnav__logo {
-      color: var(--secondary-color);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 0 30px 0 0;
+      display: none;
 
-      @media (width < calc(1000 / 16 * 1rem)) {
-        display: none;
+      @media (width > calc(1000 / 16 * 1rem)) {
+        color: var(--secondary-color);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 30px 0 0;
       }
     }
 
@@ -194,22 +188,22 @@
   .hero {
     .hero__content {
       display: flex;
-      height: calc(100vh - var(--header-height));
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
 
-      @media (width < calc(1000 / 16 * 1rem)) {
+      @media (width > calc(1000 / 16 * 1rem)) {
         display: flex;
-        flex-wrap: wrap;
+        height: calc(100vh - var(--header-height));
+        align-items: center;
         justify-content: center;
       }
     }
 
     .hero__introduction {
-      @media (width < calc(1000 / 16 * 1rem)) {
-        width: 90vh;
-        border-left: none;
-        text-align: center;
+      border-left: none;
+      text-align: center;
+
+      @media (width > calc(1000 / 16 * 1rem)) {
       }
 
       .hero__title {
@@ -218,13 +212,14 @@
     }
 
     .hero__headshot {
-      width: 335px;
+      margin-left: 0;
+      padding: 0;
       border-radius: 50%;
-      padding: 40px;
 
-      @media (width < calc(1000 / 16 * 1rem)) {
-        margin-left: 0;
-        padding: 40px 0;
+      @media (width > calc(1000 / 16 * 1rem)) {
+        width: 335px;
+
+        padding: 40px;
       }
     }
   }
@@ -445,9 +440,9 @@
       width: 100%;
     }
 
-    .bounce {
+    /* .bounce {
       padding: 50px 0 0 0;
-    }
+    } */
   }
 
   footer {
@@ -484,12 +479,14 @@
     color: var(--primary-color);
   }
 
-  .arrow {
-    border: solid #fff;
-    border-width: 0 8px 8px 0;
-    padding: 15px;
-    display: inline-block;
-    transform: rotate(45deg);
+  @media (width > calc(1000 / 16 * 1rem)) {
+    .arrow {
+      border: solid #fff;
+      border-width: 0 8px 8px 0;
+      padding: 15px;
+      display: inline-block;
+      transform: rotate(45deg);
+    }
   }
 
   .bounce {
